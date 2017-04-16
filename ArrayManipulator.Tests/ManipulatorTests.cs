@@ -29,6 +29,13 @@ namespace ArrayManipulator.Tests
         }
 
         [Fact]
+        public void HandleDivisorLargerThanArrayLengthTest()
+        {
+            Assert.Throws<ArgumentException>(
+                () => Manipulator.Split(new int[] { 1, 2, 3, 4, 5, 6 }, 100));
+        }
+
+        [Fact]
         public void AvoidsBadInputArrayTest()
         {
             Assert.Throws<ArgumentException>(

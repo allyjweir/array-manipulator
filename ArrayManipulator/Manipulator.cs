@@ -18,7 +18,8 @@ namespace ArrayManipulator
         /// <param name="divisor">The number of arrays that should be returned
         /// by the method.</param>
         /// <returns>A <see cref="List{T}"/> of <see cref="int[]"/></returns>
-        public static IEnumerable<IEnumerable<int>> Split(IEnumerable<int> originalArray, int divisor)
+        public static IEnumerable<IEnumerable<int>> Split(
+            IEnumerable<int> originalArray, int divisor)
         {
             // Check parameters meet requirements of method.
             if (originalArray.Count() < 1)
@@ -27,7 +28,14 @@ namespace ArrayManipulator
             }
             if (divisor < 1)
             {
-                throw new ArgumentException("Divisor must be a positive integer");
+                throw new ArgumentException("Divisor must be a positive " +
+                    "integer");
+            }
+            if (originalArray.Count() < divisor)
+            {
+                throw new ArgumentException("Divisor must be smaller than the " +
+                    "length of the array to be able to return that number of " +
+                    "arrays");
             }
 
             // Round up the newArrayLength to make sure we grab any remainder
@@ -44,8 +52,8 @@ namespace ArrayManipulator
 
                 splitArrays.Add(newArray);
 
-                // Reassign originalArray to not include the ones we just 
-                // extracted and placed in our splitArrays List.
+                // Reassign originalArray to a new array that does not include
+                // the ones we just extracted.
                 originalArray = originalArray.Skip(newArrayLength);
             }
 
