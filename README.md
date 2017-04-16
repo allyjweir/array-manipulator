@@ -16,8 +16,19 @@ Output [[1, 2], [3, 4], [5]]
 
 AppVeyor is used for CI. For more details, click the Build Status badge above.
 
+## To Run
+
+Being written in C#, this project requires Visual Studio to run. Could possibly run in .NET Core on Linux/macOS but untested.
+
+### On Windows (Tested on Win10)
+
+1. Install Visual Studio (developed in VS 2017 Community)
+2. Clone the repo
+3. Open the solution file (.sln) in Visual Studio
+4. On the menu bar at top:
+  a. Build -> Build Solution
+  b. Test -> Run -> All Tests.
+  
 ## Tests
 
 Tests written in xUnit with xunit.runners.visualstudio.
-
-Open in Visual Studio 2017 or later to compile and run the test suite.
