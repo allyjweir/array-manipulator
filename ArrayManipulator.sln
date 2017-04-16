@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulator", "ArrayManipulator\ArrayManipulator.csproj", "{F6400E1F-8F8A-466A-990D-45614F915BB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulator.Tests", "ArrayManipulator.Tests\ArrayManipulator.Tests.csproj", "{FE11B2E9-8C0A-48B9-836A-236B37B11AE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F6400E1F-8F8A-466A-990D-45614F915BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6400E1F-8F8A-466A-990D-45614F915BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6400E1F-8F8A-466A-990D-45614F915BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE11B2E9-8C0A-48B9-836A-236B37B11AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE11B2E9-8C0A-48B9-836A-236B37B11AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE11B2E9-8C0A-48B9-836A-236B37B11AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE11B2E9-8C0A-48B9-836A-236B37B11AE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
